@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pato</title>
+
+    <link rel="shortcut icon" href="./assets/imgs/logos/favicon.png.webp" sizes="16x16" type="image/x-icon">
+
+    <!-- flat picker css1 js1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Get Boot strap v5.3 css1 js1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!-- font awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel css2 js1 -->
+    <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- magnific pop up css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/Magnific-Popup-master/dist/magnific-popup.css">
+
+    <!-- wow js css1 js1-->
+    <link rel="stylesheet" href="./assets/libs/WOW-master/css/libs/animate.css">
+
+    <!-- animate style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- end preloader -->
+    <!-- start header -->
+    <header>
+        <!-- start nav bar -->
+        <nav class="">
+            <div class="nav_bar_line"></div>
+            <div class="container d-flex justify-content-between align-items-center  ">
+                <a href="./index.html" class="nav-brand">
+                    <img src="./assets/imgs/logos/logo.png.webp" width="130px" alt="">
+                </a>
+                <ul class="text-uppercase p-0 m-0 d-none d-lg-flex justify-content-center align-items-center list-unstyled ">
+                    <li class="px-4 nav-item"><a href="./index.html" class="nav-link ">Home</a></li>
+                    <li class="px-4 nav-item"><a href="./menu.html" class="nav-link">Menu</a></li>
+                    <li class="px-4 nav-item"><a href="./reservation.html" class="nav-link active">Reservtion</a></li>
+                    <li class="px-4 nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                    <li class="px-4 nav-item"><a href="./‌about.html" class="nav-link">About</a></li>
+                    <li class="px-4 nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="px-4 nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <ul class="m-0 list-unstyled d-flex justify-content-center align-items-center">
+                    <li class="px-2 nav-item"><a href="#" class="nav-link"><i class="fab fa-google-plus"></i></a></li>
+                    <li class="px-2 nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="px-2 nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <button class="border-0 navbar_toggle">
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                </button>
+            </div>
+            <div class="p-5 navbar_slide_list_group ">
+                <div class="text-end">
+                    <button class="close_navbar_slide_btn">
+                        <div></div>
+                        <div></div>
+                    </button>
+                </div>
+                
+                <ul class="text-center list-unstyled text-uppercase navbar_slide_list">
+                    <li class="py-2 navbar_slide_list_items"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="py-2 navbar_slide_list_items"><a href="./menu.html" class="nav-link">Menu</a></li>
+                    <li class="py-2 navbar_slide_list_items"><a href="#" class="nav-link">Gallery</a></li>
+                    <li class="py-2 navbar_slide_list_items"><a href="./‌about.html" class="nav-link">About</a></li>
+                    <li class="py-2 navbar_slide_list_items"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="py-2 navbar_slide_list_items"><a href="./contact.html" class="nav-link">Contact</a></li>
+                    <li class="py-2 my-3 navbar_slide_list_items"><a href="#reservation_form" class="nav-link reservation_btn">Reservtion</a></li>
+                </ul>
+                <div class="mt-5 nav_gallery_group">
+                    <h3 class="text-center">Gallery</h3>
+                    <div class="p-4 row gap-0 justify-content-start align-items-center">
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-01.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-01.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-02.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-02.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-03.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-03.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-05.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-05.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-06.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-06.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-07.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-07.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-09.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-09.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-10.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-10.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                        <div class="col-4 p-2">
+                            <a href="./assets/imgs/gallery/photo-gallery-thumb-11.jpg.webp" class="nav_gallery">
+                                <img src="./assets/imgs/gallery/photo-gallery-thumb-11.jpg.webp" width="100%" alt="gallery">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav bar -->
+
+        <!-- start sub banner section -->
+        <section class="sub_banner_section">
+            <div class="sub_banner_container">
+                <div class="container">
+                    <div class="sub_banner_title">
+                        <h1 class="text-center text-uppercase">Reservation</h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end sub banner section -->
+    </header>
+    <!-- end header -->
+
+
+    <!-- start reservation section -->
+    <section>
+        <div class="py-5 reservation_section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 mb-2">
+                        <!-- start global title -->
+                        <div class="wow animate__jello  mb-5 text-center global_title_container">
+                            <span class="text-captialize global_subtitle">Reservation</span>
+                            <h2 class="text-uppercase global_titile">Book table</h2>
+                        </div>
+                        <!-- end global title -->
+                        <div id="reservation_form" class="reservation_form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 mb-2">
+                                        <div class="form-group mb-3">
+                                            <label for="selectdate">Date</label>
+                                            <input type="date" name="date" id="selectdate" class="form-control border-1 shadow-none outline-none">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="time">Time</label>
+                                            <input type="time" name="time" id="time" class="form-control border-1 shadow-none outline-none">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="">People</label>
+                                            <select name="people" id="" class=" form-select border-1 shadow-none outline-none">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 mb-2">
+                                        <div class="form-group mb-3">
+                                            <label for="username">Name</label>
+                                            <input type="text" name="username" id="username" class="form-control border-1 shadow-none outline-none" placeholder="Name">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="phone">Phone</label>
+                                            <input type="text" name="phone" id="phone" class="form-control border-1 shadow-none outline-none" placeholder="Phone">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="email">email</label>
+                                            <input type="email" name="email" id="email" class="form-control border-1 shadow-none outline-none" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="text-uppercase reservation_btn">Book Table</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end reservation section -->
+
+    <!-- start footer section -->
+    <footer>
+        <div class="footer_section">
+            <div class="sign_up_section">
+                <div class="container">
+                    <div class="d-block d-lg-flex gap-4 justify-content-center align-items-center">
+                        <span class="d-block text-uppercase sign_up_title">
+                            specials sign up
+                        </span>
+                        <form action="">
+                            <div class="d-flex flex-wrap gap-4">
+                                <div class="form-group">
+                                    <input type="email" name="signupmail" id="" class="form-control shadow-none outline-none" placeholder="Email Address">
+                                    <span class="input_icon"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <button type="submit" class="text-uppercase reservation_btn">Sign-up</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 footer_content_main_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div class="mb-5 footer_content_container">
+                                <div class="mb-4 footer_content_header">
+                                    <h3 class="text-uppercase">Contact Us</h3>
+                                </div>
+                                <div class="footer_content_body">
+                                    <ul class="list-unstyled">
+                                        <li class="py-2">
+                                            <span class="d-inline-block footer_icons me-2">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <span class="footer_content">8th floor, 379 Hudson St, New York, NY 10018</span>
+                                        </li>
+                                        <li class="py-2">
+                                            <span class="d-inline-block footer_icons me-2">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <span class="footer_content">(+1) 96 716 6879</span>
+                                        </li>
+                                        <li class="py-2">
+                                            <span class="d-inline-block footer_icons me-2">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="footer_content">contact@site.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-5 footer_content_container">
+                                <div class="mb-4 footer_content_header">
+                                    <h3 class="text-uppercase">Openting Time</h3>
+                                </div>
+                                <div class="footer_content_body">
+                                    <ul class="list-unstyled">
+                                        <li class="py-2">
+                                            <span class="footer_content">09:30 AM – 11:00 PM</span>
+                                        </li>
+                                        <li class="py-2">
+                                            <span class="footer_content">Every Day</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div class="mb-5 footer_content_container">
+                                <div class="mb-4 footer_content_header">
+                                    <h3 class="text-uppercase">Contact Us</h3>
+                                </div>
+                                <div class="footer_content_body">
+                                    <ul class="list-unstyled">
+                                        <li class="py-2">
+                                            <span class="d-inline-block footer_icons me-2">
+                                                <i class="fab fa-twitter"></i>
+                                            </span>
+                                            <span class="footer_content"><a href="#" class="">contact@gmail.com</a></span>
+                                        </li>
+                                        <li class="py-2"><span class="footer_content">Activello is a good option. It has a slider built into that displays the featured image in the slider.</span>
+                                        </li>
+                                        <li class="py-2">
+                                            <span class="footer_content"><a href="#" class="nav-link">contact@gmail.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                            <div class="mb-5 footer_content_container">
+                                <div class="mb-4 footer_content_header">
+                                    <h3 class="text-uppercase">Gallery</h3>
+                                </div>
+                                <div class="footer_content_body">
+                                    <div class="row">
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-01.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-01.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-02.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-02.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-03.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-03.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-04.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-04.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-05.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-05.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-06.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-06.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-07.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-07.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-08.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-08.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-09.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-09.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-10.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-10.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-11.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-11.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-4">
+                                            <div class="footer_gallery_img">
+                                                <a href="./assets/imgs/gallery/photo-gallery-thumb-12.jpg.webp" class="footer_imgs_gallery">
+                                                    <img src="./assets/imgs/gallery/photo-gallery-thumb-12.jpg.webp" width="100%" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+    <!-- Get Boot strap v5.3 css1 js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- jquery 3.6.3  -->
+    <script src="./assets/libs/jquery3-6-3.js"></script>
+
+    <!-- flat picker css1 js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- owlcarousel css2 js 1  -->
+    <script src="./assets/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- magnific pop up css1 js1  -->
+    <script src="./assets/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- wow js css1 js1  -->
+    <script src="./assets/libs/WOW-master/dist/wow.min.js"></script>
+
+    <!-- counter up js1 css 0 -->
+    <script src="./assets/libs/Counter-Up2-master/dist/index.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/reservation.js"></script>
+
+
+
+</body>
+</html>
